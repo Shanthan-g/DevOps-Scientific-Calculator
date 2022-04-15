@@ -38,7 +38,7 @@ public class Calculator {
                     break;
                 }
                 case 3:{
-                    System.out.println("Enter the number for calculating natural log:");
+                    System.out.println("Enter a number for calculating natural log:");
                     double log = Double.parseDouble(br.readLine());
                     double result = obj.naturalLog(log);
                     break;
