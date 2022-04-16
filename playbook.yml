@@ -1,0 +1,8 @@
+---
+- name: Pulling Image
+  hosts: all
+  tasks:
+    - name: Pulling Image from Docker Hub
+      docker_image:
+        name: shanthan1918/devops-calc
+        source: pull
