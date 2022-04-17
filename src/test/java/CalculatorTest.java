@@ -16,8 +16,8 @@ public class CalculatorTest {
 
     @Test
     public void testSquareRoot() {
-        assertEquals("Checking true positive case for square root:", 9, calculator.squareRoot(81), DELTA);
-        assertNotEquals("Checking false positive case for square root:", 25, calculator.squareRoot(81), DELTA);
+        assertEquals("Checking true positive case for square root:", 10, calculator.squareRoot(100), DELTA);
+        assertNotEquals("Checking false positive case for square root:", 5, calculator.squareRoot(100), DELTA);
     }
 
 
