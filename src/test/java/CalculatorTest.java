@@ -59,6 +59,6 @@ public class CalculatorTest {
 
     @Test
     public void powerTestException() throws IllegalArgumentException{
-        calculator.power(-9, 1);
+        calculator.power(-10, 2);
     }
 }
