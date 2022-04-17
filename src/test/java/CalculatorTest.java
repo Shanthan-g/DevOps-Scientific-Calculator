@@ -53,8 +53,8 @@ public class CalculatorTest {
 
     @Test
     public void testPower() {
-        assertEquals("Checking true positive case for power:", 1000, calculator.power(10, 3), DELTA);
-        assertNotEquals("Checking false positive case for power:", 100, calculator.power(10, 3), DELTA);
+        assertEquals("Checking true positive case for power:", 100, calculator.power(10, 2), DELTA);
+        assertNotEquals("Checking false positive case for power:", 10, calculator.power(10, 2), DELTA);
     }
 
     @Test
