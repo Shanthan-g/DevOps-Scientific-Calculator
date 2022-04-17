@@ -42,13 +42,13 @@ public class CalculatorTest {
 
     @Test
     public void testLogarithm() {
-        assertEquals("Checking true positive case for logarithm:", 6.907755278982137, calculator.naturalLog(1000), DELTA);
-        assertNotEquals("Checking false positive case for logarithm:", 4, calculator.naturalLog(1000), DELTA);
+        assertEquals("Checking true positive case for logarithm:", 4.605170185988092, calculator.naturalLog(100), DELTA);
+        assertNotEquals("Checking false positive case for logarithm:", 100, calculator.naturalLog(100), DELTA);
     }
 
     @Test
     public void logTestException() throws IllegalArgumentException{
-        calculator.naturalLog(-9);
+        calculator.naturalLog(-100);
     }
 
     @Test

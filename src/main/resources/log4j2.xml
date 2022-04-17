@@ -14,7 +14,6 @@
                 <SizeBasedTriggeringPolicy size="10 MB"/>
             </Policies>
         </File>
-
     </Appenders>
     <Loggers>
         <Logger name="Calculator" level="debug" additivity="false">
