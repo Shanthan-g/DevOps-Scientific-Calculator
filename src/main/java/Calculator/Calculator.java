@@ -46,7 +46,7 @@ public class Calculator {
                 case 4: {
                     System.out.println("Enter the base number for calculating power:");
                     double pow1 = Double.parseDouble(br.readLine());
-                    System.out.println("Enter the exponent for calculating power:");
+                    System.out.println("Enter an exponent for calculating power:");
                     double pow2 = Double.parseDouble(br.readLine());
                     double result = obj.power(pow1, pow2);
                     break;
