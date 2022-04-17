@@ -26,7 +26,7 @@ public class Calculator {
 
             switch (choice){
                 case 1: {
-                    System.out.println("Enter the number for calculating square root:");
+                    System.out.println("Enter a number for calculating square root:");
                     double num = Double.parseDouble(br.readLine());
                     double result = obj.squareRoot(num);
                     break;
