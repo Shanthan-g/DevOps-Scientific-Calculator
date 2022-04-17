@@ -32,7 +32,7 @@ public class Calculator {
                     break;
                 }
                 case 2: {
-                    System.out.println("Enter the number for calculating factorial:");
+                    System.out.println("Enter a number for calculating factorial:");
                     double fact = Double.parseDouble(br.readLine());
                     double result = obj.factorial(fact);
                     break;
