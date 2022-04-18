@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="DEBUG">
-
+<Configuration status="WARN">
     <Appenders>
-        <Console name="Appender" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss SSS} [%F] [%level] %logger{36} %msg%n"/>
-        </Console>
-        <File name="getFile" fileName="Calculator.log" immidiateFlush="true" append="true">
-            <PatternLayout>
-                <Pattern>%d{yyy-MM-dd HH:mm:ss.SSS} [%F] [%level] %logger{36} %msg%n</Pattern>
-            </PatternLayout>
+        <File name="Appender" filename="Calculator.log">
+            <JSONLayout compact="true" eventEol="true">
+                <KeyValuePair key="@timestamp" value="${date:yyyy-MM-dd'T'HH:mm:ss.SSSZ}" />
+            </JSONLayout>
         </File>
     </Appenders>
     <Loggers>
-        <Logger name="Calculator" level="debug" additivity="false">
-            <AppenderRef ref="getFile"/>
-            <AppenderRef ref="Appender"/>
-        </Logger>
-
         <Root level="debug">
-            <AppenderRef ref="getFile"/>
             <AppenderRef ref="Appender"/>
         </Root>
     </Loggers>

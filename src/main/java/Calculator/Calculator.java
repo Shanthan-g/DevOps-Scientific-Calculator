@@ -68,7 +68,7 @@ public class Calculator {
     public double power(double pow1, double pow2) {
         double result = 0;
         try{
-            logger.info("Base and exponent are :["+ pow1+" ,"+pow2+"]");
+            logger.info("Power");
 
             if(pow2 == 0)
                 result = 1;
@@ -78,13 +78,13 @@ public class Calculator {
             System.out.println("Power of the"+ pow1 +"raised to "+pow2+" is: "+ result);
 
         } catch(IllegalArgumentException e){
-            logger.error("Base should be positive integer :["+ pow1+", "+pow2+"]");
+            logger.error("Power error");
         }
         return result;
     }
 
     public double factorial(double fact) {
-        logger.info("Number entered is :["+ fact+"]");
+        logger.info("Factorial");
         Double result = 1.0;
         try {
             while(fact > 0){
@@ -94,7 +94,7 @@ public class Calculator {
 
             System.out.println("Factorial of the entered number is: "+ result);
         } catch(IllegalArgumentException e){
-            logger.error("Factorial of negative numbers is not possible in catch :["+fact+"]");
+            logger.error("Factorial error");
         }
         return result;
     }
@@ -102,7 +102,7 @@ public class Calculator {
     public double naturalLog(double log) {
         double result = 0;
         try{
-            logger.info("Base and exponent are :["+ 10+" ,"+log+"]");
+            logger.info("Natural_Log");
 
 
             result = Math.log(log);
@@ -110,7 +110,7 @@ public class Calculator {
             System.out.println("Natural Log of the entered number is: "+ result);
 
         } catch(IllegalArgumentException e){
-            logger.error("Log of negatives is not defined :["+log+"]");
+            logger.error("Log error");
         }
         return result;
     }
@@ -118,7 +118,7 @@ public class Calculator {
     public double squareRoot(double num) {
         double result = 0;
         try {
-            logger.info("Number for square root :[" + num+"]");
+            logger.info("Square_Root");
 
             //throw new ArithmeticException("Number is either 0 or less than 0");
 
@@ -128,7 +128,7 @@ public class Calculator {
 
 
         } catch (IllegalArgumentException e) {
-            logger.error("Square root can't be negative or 0 :["+num+"]");
+            logger.error("Square root error");
         }
         return result;
     }
