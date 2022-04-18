@@ -23,20 +23,20 @@ public class CalculatorTest {
 
     @Test
     public void squareRootException() throws IllegalArgumentException{
-        calculator.squareRoot(-9);
+        calculator.squareRoot(-10);
     }
 
 
     @Test
     public void testFactorial() {
-        assertEquals("Checking true positive case for factorial:", 24, calculator.factorial(4), DELTA);
-        assertNotEquals("Checking false positive case for factorial:", 24, calculator.factorial(3), DELTA);
+        assertEquals("Checking true positive case for factorial:", 120, calculator.factorial(5), DELTA);
+        assertNotEquals("Checking false positive case for factorial:", 24, calculator.factorial(5), DELTA);
     }
 
 
     @Test
     public void factorialTestException() throws IllegalArgumentException{
-        calculator.factorial(-9);
+        calculator.factorial(-10);
     }
 
 
