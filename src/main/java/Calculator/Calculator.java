@@ -121,7 +121,7 @@ public class Calculator {
             logger.info("Square_Root");
 
             result = Math.sqrt(num);
-            System.out.println("Square root of the entered number is: " + result);
+            System.out.println("Square root of the given number is: " + result);
 
 
         } catch (IllegalArgumentException e) {
