@@ -120,9 +120,6 @@ public class Calculator {
         try {
             logger.info("Square_Root");
 
-            //throw new ArithmeticException("Number is either 0 or less than 0");
-
-
             result = Math.sqrt(num);
             System.out.println("Square root of the entered number is: " + result);
 
