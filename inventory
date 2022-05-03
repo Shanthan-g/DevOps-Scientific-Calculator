@@ -1,2 +1,2 @@
 [ubuntu18]
-172.16.128.141 ansible_user=gsr
+172.16.135.205 ansible_user=gsr
