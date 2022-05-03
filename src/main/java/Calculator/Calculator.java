@@ -107,7 +107,7 @@ public class Calculator {
 
             result = Math.log(log);
 
-            System.out.println("Natural Log of the entered number is: "+ result);
+            System.out.println("Natural Log of entered number is: "+ result);
 
         } catch(IllegalArgumentException e){
             logger.error("Log error");

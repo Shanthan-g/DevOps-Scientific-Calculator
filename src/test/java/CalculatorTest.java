@@ -29,7 +29,7 @@ public class CalculatorTest {
 
     @Test
     public void testFactorial() {
-        assertEquals("Checking true positive case for factorial:", 120, calculator.factorial(5), DELTA);
+        assertEquals("Checking the true positive case for factorial:", 120, calculator.factorial(5), DELTA);
         assertNotEquals("Checking false positive case for factorial:", 24, calculator.factorial(5), DELTA);
     }
 
