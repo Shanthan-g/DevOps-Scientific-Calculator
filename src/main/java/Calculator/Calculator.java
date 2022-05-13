@@ -16,7 +16,7 @@ public class Calculator {
         System.out.println("Please select one of the operations:");
         System.out.println("Press 1 for Square root");
         System.out.println("Press 2 for Factorial");
-        System.out.println("Press 3 for Natural Logarithm");
+        System.out.println("Press 3 for the Natural Logarithm");
         System.out.println("Press 4 for Power ");
         System.out.println("Press 5 to exit!\n");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
